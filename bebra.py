@@ -9,6 +9,9 @@ f=open(fname,"r", encoding='utf-8').read()
 
 syntax_reg={
     "подключить":"import",
+    "вернуть":"return",
+    "фун":"def",
+    "класс":"class",
     "конец":"exit()",
     "выход":"exit()",
     "ошибка":"raise ValueError(\"Artificial bebra error\")",
@@ -31,6 +34,12 @@ syntax_reg={
     "список":"list",
     "спис":"list",
 
+    "больше или равно":">",
+    "меньше или равно":"<",
+
+    "больше":">",
+    "меньше":"<",
+
     "не равно":"!=",
     "равно":"==",
     "присвоить":"=",
@@ -46,7 +55,7 @@ syntax_reg={
     "и":"and",
     "или":"or",
 
-
+    "я":"self"
 }
 ru_a="АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ"
 en_a="ABvgDEfGZIJKLMNOPRSTUFWCXscQ_qEyY"
