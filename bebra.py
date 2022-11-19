@@ -10,11 +10,12 @@ f=open(fname,"r", encoding='utf-8').read()
 syntax_reg={
     "из":"from",
     "подключить":"import",
-    "всё":"*",
+    "как":"as",
 
     "вернуть":"return",
     "фун":"def",
     "класс":"class",
+    "создать":"__init__",
     "конец":"exit()",
     "выход":"exit()",
     "ошибка":"raise ValueError(\"Artificial bebra error\")",
