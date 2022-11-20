@@ -1,5 +1,5 @@
 # <img src="https://img.shields.io/badge/Bebra-Скрипт-%20orange" height="100" />
-Язык программирования на **русском** в ***100*** строк, полностью совместимый с *Python*
+Язык программирования на **русском** в ***100*** строк, полностью совместимый с <img src="https://img.shields.io/badge/Python-darkgreen" />
 
 <details>
 <summary>В чём челлендж?</summary>
