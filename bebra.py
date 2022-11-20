@@ -1,15 +1,12 @@
 import sys
 fname = sys.argv[1]
-if len(sys.argv)<3:
-    task="python"
-else: task = sys.argv[2]
-assert task in ["python","fast","build"]
 newfname=fname.replace("bebra","py")
 f=open(fname,"r", encoding='utf-8').read()
 
 syntax_reg={
     "из":"from",
     "подключить":"import",
+    "удалить":"del",
     "как":"as",
 
     "вернуть":"return",
@@ -62,7 +59,8 @@ syntax_reg={
     "и":"and",
     "или":"or",
 
-    "я":"self"
+    "я":"self",
+    "c":"with"
 }
 ru_a="АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ"
 en_a="ABvgDEfGZIJKLMNOPRSTUFWCXscQ_qEyY"
@@ -95,9 +93,10 @@ with open(newfname,"w", encoding='utf-8') as nf:
 if os.system("pyflakes script.py"):
     print("BebraScript syntax error!!!")
     exit(1)
-if task=="python":
-    os.system("python "+newfname)
 
+os.system("python "+newfname)
+
+"""
 if task=="fast":
     exe=os.path.dirname(os.path.realpath(__file__))+"\pypy\pypy.exe"
     os.system(exe+" "+newfname)
@@ -107,3 +106,4 @@ elif task=="build":
     os.remove(fname.replace("bebra","cmd"))
     __import__("shutil").rmtree(fname.replace("bebra","build"))
     print("Bebra compiling completed!")
+"""
