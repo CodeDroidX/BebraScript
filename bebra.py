@@ -67,7 +67,7 @@ syntax_reg={
 ru_a="АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ"
 en_a="ABvgDEfGZIJKLMNOPRSTUFWCXscQ_qEyY"
 
-f="from fractions import Fraction\nfrc=lambda x: Fraction(x).limit_denominator(1000)\n"+f
+f="from fractions import Fraction\nfrc=lambda x: Fraction(x).limit_denominator(1000)\n#Bebrascript built-in functions\n\n"+f
 
 import re
 art_str=re.split('("[^\"]*\")', f)[1::2]
